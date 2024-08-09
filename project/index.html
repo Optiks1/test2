@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM - Alpham.pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Хед -->
+    <header class="pagecrm_header">
+        <nav class="pagecrm_nav">
+            <!-- Навигация -->
+            <a href="/" class="pagecrm_logo">Alpham.pro</a>
+            <ul class="pagecrm_menu">
+                <li><a href="/services" class="pagecrm_link">Services</a></li>
+                <li><a href="/projects" class="pagecrm_link">Projects</a></li>
+                <li><a href="/about" class="pagecrm_link">About Us</a></li>
+                <li><a href="/contact" class="pagecrm_link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Контент -->
+    <main class="pagecrm_main">
+        <section class="pagecrm_intro">
+            <h1 class="pagecrm_title">CRM Services</h1>
+            <p class="pagecrm_subtitle">Optimize your business processes with our advanced CRM solutions.</p>
+            <a href="/contact" class="pagecrm_button">Get Started</a>
+        </section>
+
+        <section class="pagecrm_features">
+            <h2 class="pagecrm_section-title">Features</h2>
+            <div class="pagecrm_feature">
+                <h3 class="pagecrm_feature-title">Customizable</h3>
+                <p class="pagecrm_feature-desc">Tailor-made CRM to fit your business needs.</p>
+            </div>
+            <div class="pagecrm_feature">
+                <h3 class="pagecrm_feature-title">Scalable</h3>
+                <p class="pagecrm_feature-desc">Grows with your business, no matter the size.</p>
+            </div>
+            <div class="pagecrm_feature">
+                <h3 class="pagecrm_feature-title">Secure</h3>
+                <p class="pagecrm_feature-desc">Top-notch security to keep your data safe.</p>
+            </div>
+        </section>
+
+        <section class="pagecrm_contact">
+            <h2 class="pagecrm_section-title">Contact Us</h2>
+            <form action="/submit" method="post" class="pagecrm_form">
+                <label for="name" class="pagecrm_label">Name</label>
+                <input type="text" id="name" name="name" class="pagecrm_input" required>
+
+                <label for="email" class="pagecrm_label">Email</label>
+                <input type="email" id="email" name="email" class="pagecrm_input" required>
+
+                <label for="message" class="pagecrm_label">Message</label>
+                <textarea id="message" name="message" class="pagecrm_textarea" required></textarea>
+
+                <button type="submit" class="pagecrm_button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="pagecrm_footer">
+        <p>&copy; 2024 Alpham.pro. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* Общие стили */
+body {
+    font-family: 'Play', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('../images/Фон_страница_CRM.svg'); /* Путь к вашему SVG-файлу */
+    background-size: cover; /* Покрытие всего экрана */
+    background-position: center; /* Центровка фона */
+    background-repeat: no-repeat; /* Без повторения фона */
+}
+
+.pagecrm_header, .pagecrm_footer {
+    background-color: rgba(248, 248, 248, 0.8); /* Полупрозрачный фон для читаемости текста */
+    padding: 10px;
+}
+
+.pagecrm_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagecrm_logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.pagecrm_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.pagecrm_menu li {
+    margin-left: 20px;
+}
+
+.pagecrm_link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.pagecrm_main {
+    padding: 10px;
+    margin-bottom: 75px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контента */
+}
+
+.pagecrm_intro {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.pagecrm_title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.pagecrm_subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.pagecrm_button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.pagecrm_button:hover {
+    background-color: #0056b3;
+}
+
+.pagecrm_features {
+    margin-bottom: 75px;
+}
+
+.pagecrm_section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.pagecrm_feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pagecrm_feature-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pagecrm_feature-desc {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pagecrm_contact {
+    text-align: center;
+}
+
+.pagecrm_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagecrm_label {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.pagecrm_input, .pagecrm_textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pagecrm_textarea {
+    height: 150px;
+    resize: none;
+}
+
+.pagecrm_footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(241, 241, 241, 0.8); /* Полупрозрачный фон для читаемости текста */
+    margin-top: 75px;
+}
+
+/* Mobile styles (320px - 640px) */
+@media (min-width: 320px) {
+    .pagecrm_main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Tablet styles (640px - 980px) */
+@media (min-width: 640px) {
+    .pagecrm_main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Desktop styles (980px - 1600px) */
+@media (min-width: 980px) {
+    .pagecrm_header, .pagecrm_footer {
+        padding: 100px;
+    }
+
+    .pagecrm_main {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 120px;
+    }
+}
+
+/* Large screens (1600px and more) */
+@media (min-width: 1600px) {
+    .pagecrm_main {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
